@@ -68,6 +68,19 @@ As of February 2016, this project has been migrated to gradle to work successful
 4. Done! Wait for dependencies to load and download from Maven, then you're ready to go! 
 5. Make sure that you have the latest SDK and build tools downloaded, as we always build against the latest release.
 
+### Steps to run tests:
+1. Open the terminal tab in android-studio
+2. 
+```bash
+$ export KEYSTORE_PASSWORD=root01 # password for `release.keystore`
+$ export KEYSTORE_ALIAS_NAME=my-key-alias
+$ export KEYSTORE_ALIAS_PASS=root01
+```
+3. Run at terminal
+```
+$ ./gradlew build # runs with tests. ./gradlew builds without tests
+```
+
 [In-depth tutorial](https://github.com/codepath/android_guides/wiki/Getting-Started-with-Gradle)
 
 Note:
